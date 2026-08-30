@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">نقطه صفر</string>
+    <string name="game_title">نقطه صفر</string>
+    <string name="game_subtitle">Zero-Sum Annihilation</string>
+    <string name="matter_label">ماده (+)</string>
+    <string name="antimatter_label">پادماده (-)</string>
+    <string name="annihilation_label">نابودی کوانتومی</string>
+    <string name="score_label">امتیاز</string>
+    <string name="best_score_label">رکورد</string>
+    <string name="annihilations_count_label">نابودی‌ها</string>
+    <string name="moves_label">حرکات</string>
+    <string name="daily_challenge_label">چالش روزانه</string>
+    <string name="classic_mode_label">حالت کلاسیک</string>
+    <string name="puzzle_mode_label">معماهای صفر</string>
+    <string name="new_game">بازی جدید</string>
+    <string name="undo_move">بازگشت (Undo)</string>
+    <string name="game_over">پایان بازی!</string>
+    <string name="board_full">صفحه پر شد و حرکتی باقی نمانده است.</string>
+    <string name="victory">پیروزی مطلق!</string>
+    <string name="victory_desc">کل صفحه با موفقیت به نقطه صفر رسید!</string>
+    <string name="how_to_play">راهنمای بازی</string>
+    <string name="share_result">اشتراک‌گذاری نتیجه</string>
+</resources>

@@ -1,0 +1,6 @@
+{
+  "name": "Zero-Sum: نقطه صفر",
+  "description": "بازی پازلی اعتیادآور ماده و پادماده با مکانیک کشیدن و نابودی کامل صفحه (Zero-Sum Annihilation Puzzle)",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

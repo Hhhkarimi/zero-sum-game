@@ -30,7 +30,7 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
         with:
-          gradle-version: '8.11.1'
+          gradle-version: '9.3.1'
 
       - name: Setup environment and keystore
         run: |
@@ -46,10 +46,20 @@ jobs:
             cp debug.keystore app/debug.keystore 2>/dev/null || true
           fi
 
-      - name: Generate wrapper if missing
+      - name: Configure Gradle Wrapper 9.3.1
         run: |
+          mkdir -p gradle/wrapper
+          cat << 'EOF' > gradle/wrapper/gradle-wrapper.properties
+          distributionBase=GRADLE_USER_HOME
+          distributionPath=wrapper/dists
+          distributionUrl=https\://services.gradle.org/distributions/gradle-9.3.1-bin.zip
+          networkTimeout=10000
+          validateDistributionUrl=true
+          zipStoreBase=GRADLE_USER_HOME
+          zipStorePath=wrapper/dists
+          EOF
           if [ ! -f gradlew ]; then
-            gradle wrapper
+            gradle wrapper --gradle-version 9.3.1
           fi
           chmod +x gradlew
 
